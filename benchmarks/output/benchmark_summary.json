@@ -1,0 +1,296 @@
+{
+  "generated_at": "2026-11-18T10:11:14Z",
+  "cafa6_ablation": [
+    {
+      "model": "Frequency Prior Baseline",
+      "wfmax": 0.3429,
+      "violations_after": 0
+    },
+    {
+      "model": "Real 3-mer Sparse kNN (8,000-d)",
+      "wfmax": 0.3496,
+      "violations_after": 0
+    },
+    {
+      "model": "ESM2 Cosine kNN (320-d)",
+      "wfmax": 0.4181,
+      "violations_after": 0
+    },
+    {
+      "model": "ESM2 PyTorch MLP",
+      "wfmax": 0.4454,
+      "violations_after": 94
+    },
+    {
+      "model": "Ensemble Blend (Raw)",
+      "wfmax": 0.4421,
+      "violations_after": 88.4
+    },
+    {
+      "model": "Ensemble + True-Path DAG Engine",
+      "wfmax": 0.4413,
+      "violations_after": 0
+    }
+  ],
+  "dag_repair_audit": {
+    "mean_violations_before": 88.38,
+    "mean_violations_after": 0.0,
+    "zero_violation_guarantee_pct": 100.0
+  },
+  "clinical_variant_benchmark": {
+    "n_variants": 24,
+    "n_pathogenic": 14,
+    "n_benign": 10,
+    "llr_auroc": 0.5071,
+    "llr_auprc": 0.594,
+    "dual_axis_auroc": 0.7714,
+    "dual_axis_auprc": 0.8408,
+    "mean_variant_latency_ms": 340.2,
+    "variants": [
+      {
+        "gene": "TP53",
+        "mutation": "R175H",
+        "label": "Pathogenic",
+        "llr": -0.6982,
+        "fdi": 2.13,
+        "plddt": 96.62,
+        "dual_axis_risk": 58.52,
+        "latency_ms": 5805.2
+      },
+      {
+        "gene": "TP53",
+        "mutation": "G245S",
+        "label": "Pathogenic",
+        "llr": 0.0366,
+        "fdi": 0.4,
+        "plddt": 94.81,
+        "dual_axis_risk": 53.7,
+        "latency_ms": 134.7
+      },
+      {
+        "gene": "TP53",
+        "mutation": "R248Q",
+        "label": "Pathogenic",
+        "llr": -0.5826,
+        "fdi": 0.24,
+        "plddt": 97.25,
+        "dual_axis_risk": 48.47,
+        "latency_ms": 154.8
+      },
+      {
+        "gene": "TP53",
+        "mutation": "R248W",
+        "label": "Pathogenic",
+        "llr": -1.4451,
+        "fdi": 0.24,
+        "plddt": 97.25,
+        "dual_axis_risk": 65.34,
+        "latency_ms": 92.5
+      },
+      {
+        "gene": "TP53",
+        "mutation": "R249S",
+        "label": "Pathogenic",
+        "llr": 0.175,
+        "fdi": 0.83,
+        "plddt": 97.81,
+        "dual_axis_risk": 55.81,
+        "latency_ms": 139.2
+      },
+      {
+        "gene": "TP53",
+        "mutation": "R273H",
+        "label": "Pathogenic",
+        "llr": -1.0475,
+        "fdi": 0.26,
+        "plddt": 98.56,
+        "dual_axis_risk": 59.7,
+        "latency_ms": 153.4
+      },
+      {
+        "gene": "TP53",
+        "mutation": "R273C",
+        "label": "Pathogenic",
+        "llr": -1.904,
+        "fdi": 0.63,
+        "plddt": 98.56,
+        "dual_axis_risk": 73.31,
+        "latency_ms": 89.7
+      },
+      {
+        "gene": "TP53",
+        "mutation": "R282W",
+        "label": "Pathogenic",
+        "llr": -1.3422,
+        "fdi": 1.27,
+        "plddt": 97.5,
+        "dual_axis_risk": 70.91,
+        "latency_ms": 131.0
+      },
+      {
+        "gene": "HBB",
+        "mutation": "E7V",
+        "label": "Pathogenic",
+        "llr": -2.2773,
+        "fdi": 0.24,
+        "plddt": 96.56,
+        "dual_axis_risk": 65.54,
+        "latency_ms": 111.4
+      },
+      {
+        "gene": "HBB",
+        "mutation": "E27K",
+        "label": "Pathogenic",
+        "llr": -0.6001,
+        "fdi": 2.4,
+        "plddt": 98.75,
+        "dual_axis_risk": 55.51,
+        "latency_ms": 56.4
+      },
+      {
+        "gene": "HBB",
+        "mutation": "H64Y",
+        "label": "Pathogenic",
+        "llr": 0.4337,
+        "fdi": 2.63,
+        "plddt": 98.62,
+        "dual_axis_risk": 47.83,
+        "latency_ms": 52.5
+      },
+      {
+        "gene": "INS",
+        "mutation": "C96Y",
+        "label": "Pathogenic",
+        "llr": -0.5714,
+        "fdi": 1.22,
+        "plddt": 52.19,
+        "dual_axis_risk": 37.03,
+        "latency_ms": 79.6
+      },
+      {
+        "gene": "INS",
+        "mutation": "C43G",
+        "label": "Pathogenic",
+        "llr": 0.9308,
+        "fdi": 1.62,
+        "plddt": 56.16,
+        "dual_axis_risk": 38.63,
+        "latency_ms": 46.3
+      },
+      {
+        "gene": "INS",
+        "mutation": "G32R",
+        "label": "Pathogenic",
+        "llr": -0.1846,
+        "fdi": 1.05,
+        "plddt": 51.88,
+        "dual_axis_risk": 32.23,
+        "latency_ms": 49.1
+      },
+      {
+        "gene": "TP53",
+        "mutation": "P72R",
+        "label": "Benign",
+        "llr": -3.3182,
+        "fdi": 2.24,
+        "plddt": 48.25,
+        "dual_axis_risk": 42.83,
+        "latency_ms": 142.6
+      },
+      {
+        "gene": "TP53",
+        "mutation": "P47S",
+        "label": "Benign",
+        "llr": -0.0358,
+        "fdi": 0.15,
+        "plddt": 37.94,
+        "dual_axis_risk": 25.21,
+        "latency_ms": 137.7
+      },
+      {
+        "gene": "TP53",
+        "mutation": "P36S",
+        "label": "Benign",
+        "llr": -0.1115,
+        "fdi": 0.22,
+        "plddt": 38.16,
+        "dual_axis_risk": 24.24,
+        "latency_ms": 144.7
+      },
+      {
+        "gene": "TP53",
+        "mutation": "D21N",
+        "label": "Benign",
+        "llr": -0.6688,
+        "fdi": 2.21,
+        "plddt": 72.06,
+        "dual_axis_risk": 39.92,
+        "latency_ms": 148.7
+      },
+      {
+        "gene": "TP53",
+        "mutation": "S366A",
+        "label": "Benign",
+        "llr": -0.8415,
+        "fdi": 2.45,
+        "plddt": 37.56,
+        "dual_axis_risk": 22.6,
+        "latency_ms": 139.9
+      },
+      {
+        "gene": "TP53",
+        "mutation": "T387V",
+        "label": "Benign",
+        "llr": 0.2171,
+        "fdi": 2.15,
+        "plddt": 50.88,
+        "dual_axis_risk": 23.03,
+        "latency_ms": 143.2
+      },
+      {
+        "gene": "HBB",
+        "mutation": "A14V",
+        "label": "Benign",
+        "llr": -2.327,
+        "fdi": 2.55,
+        "plddt": 97.38,
+        "dual_axis_risk": 62.16,
+        "latency_ms": 58.7
+      },
+      {
+        "gene": "HBB",
+        "mutation": "D53A",
+        "label": "Benign",
+        "llr": 0.3911,
+        "fdi": 2.2,
+        "plddt": 98.62,
+        "dual_axis_risk": 53.53,
+        "latency_ms": 55.1
+      },
+      {
+        "gene": "INS",
+        "mutation": "P9V",
+        "label": "Benign",
+        "llr": -0.1795,
+        "fdi": 1.33,
+        "plddt": 85.56,
+        "dual_axis_risk": 54.26,
+        "latency_ms": 47.4
+      },
+      {
+        "gene": "INS",
+        "mutation": "L14A",
+        "label": "Benign",
+        "llr": -0.6619,
+        "fdi": 1.34,
+        "plddt": 78.06,
+        "dual_axis_risk": 49.52,
+        "latency_ms": 51.2
+      }
+    ]
+  },
+  "figures": [
+    "benchmarks/output/fig1_cafa6_ablation.png",
+    "benchmarks/output/fig2_clinical_roc.png"
+  ]
+}
