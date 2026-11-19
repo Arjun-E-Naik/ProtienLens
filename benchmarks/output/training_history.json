@@ -1,6 +1,6 @@
 {
   "device": "cpu",
-  "runtime_seconds": 5.51,
+  "runtime_seconds": 7.11,
   "trainable_params": 424180,
   "final_val_wfmax_raw": 0.4454,
   "final_val_wfmax_dag": 0.4473,
